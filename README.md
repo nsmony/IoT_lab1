@@ -26,18 +26,39 @@ This project uses an ESP32 to measure temperature and humidity with a DHT22 sens
 | IN | GPIO 2 (D2)|
 
 ### Configuration Steps
-#### Telegram Bot Setup:
+#### 1. Telegram Bot Setup:
 - Create your own telegram bot using @BotFather
 - Get the generated Bot Token 
 - Add your bot into your telegram group
 - Get your group Chat ID
 
-#### Code Configuration:
-- Update the information into the code:
--- BOT_TOKEN = "YOUR_BOT_TOKEN"
--- CHAT_ID = "YOUR_CHAT_ID"
--- DHTPIN = 4
--- RELAY_PIN = 2
+#### 2. Code Configuration:
+##### Update the information into the code:
+```python
+BOT_TOKEN = "YOUR_BOT_TOKEN"
+CHAT_ID = "YOUR_CHAT_ID"
+```
+```python
+relay = Pin(2, Pin.OUT)
+relay.value(0)
+
+# -------- DHT SENSOR --------
+sensor = dht.DHT22(Pin(4))
+```
+
+#### 3. Wi-Fi Credentials
+```python
+SSID = "YOUR_WIFI_NAME"
+PASSWORD = "YOUR_WIFI_PASSWORD"
+```
+#### How to Use: 
+- Power the ESP32
+- Connect ESP32 to Wi-Fi
+- Connect ESP32 to telegram
+- Use the following commands:
+- /status : to show temperature, humidity, and relay status
+- /on : to turn the relay on
+- /off : to turn the relay off
 # Tasks & Checkpoints
 ### Task 1-Sensor Read & Print
 - Read DHT22 every 5 seconds and print the temperature and humidity with 2
@@ -64,6 +85,8 @@ decimals.
 received.
 - After /on, stop alerts. When T < 30 °C, turn relay OFF automatically and senda one-time “auto-OFF” notice.
 - Evidence: short video (60–90s) demonstrating above behavior https://youtu.be/eMreX57w4FE
+#### Flowchart 
+<img width="609" height="758" alt="image" src="https://github.com/user-attachments/assets/76b26c4f-ab1c-4323-9658-d649eb874850" />
 
 ### Task 5-Robustness
 - Auto-reconnect Wi-Fi when dropped.
