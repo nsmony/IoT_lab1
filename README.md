@@ -1,3 +1,31 @@
+# Lab 1 : Temperature Sensor with Relay Control (Telegram)
+This project uses an ESP32 to measure temperature and humidity with a DHT22 sensor and operate a relay module through Telegram commands.
+
+### Equipment and Wiring
+- ESP32 Dev Board (MicroPython firmware flashed)
+- DHT22 sensor
+- Relay module
+- jumper wires
+- USB cable + laptop with Thonny
+- Wi-Fi access (internet)
+#### Wiring Connection
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/50e2a4b6-8f2e-44fe-8d9a-857ba427c5ac" />
+
+#### DHT22 → ESP32
+| DHT22 Pin | ESP32 Pin |
+|----------|-----------|
+| VCC (+) | VCC/3V3 |
+| DATA (I/O) | GPIO 4 (D4) |
+| GND (-) | GND |
+
+#### Relay Module → ESP32
+| Relay Pin | ESP32 Pin |
+|----------|-----------|
+| VCC | VCC/5V (VIN) |
+| GND | GND |
+| IN | GPIO 2 (D2)|
+
+
 # Tasks & Checkpoints
 ### Task 1-Sensor Read & Print
 - Read DHT22 every 5 seconds and print the temperature and humidity with 2
