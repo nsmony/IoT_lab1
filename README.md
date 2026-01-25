@@ -16,6 +16,7 @@ decimals.
 - Implement /on and /off to control the relay.
 - Evidence: chat screenshot showing all three commands working.
 <img width="1280" height="675" alt="image" src="https://github.com/user-attachments/assets/60b5841b-0e0b-400f-80ff-af68ef1f16bd" />
+
 ### Task 4-Bot Command
 - No messages while T < 30 °C.
 - If T ≥ 30 °C and relay is OFF, send an alert every loop (5 s) until /on is
@@ -23,7 +24,7 @@ received.
 - After /on, stop alerts. When T < 30 °C, turn relay OFF automatically and senda one-time “auto-OFF” notice.
 - Evidence: short video (60–90s) demonstrating above behavior.
 
-Task 5-Robustness
+### Task 5-Robustness
 - Auto-reconnect Wi-Fi when dropped.
 - Handle Telegram HTTP errors (print status; skip this cycle on failure).
 - Avoid crashing on DHT OSError (skip cycle).
