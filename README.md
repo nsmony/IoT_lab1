@@ -9,7 +9,7 @@ This project uses an ESP32 to measure temperature and humidity with a DHT22 sens
 - USB cable + laptop with Thonny
 - Wi-Fi access (internet)
 #### Wiring Connection
-<img width="3148" height="4608" alt="image" src="https://github.com/user-attachments/assets/312c3e8e-793d-4e17-8eee-bf3514879f42" />
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/1a95a34b-b68d-45aa-ba94-fe875242a520" />
 
 #### DHT22 → ESP32
 | DHT22 Pin | ESP32 Pin |
@@ -86,7 +86,8 @@ received.
 - After /on, stop alerts. When T < 30 °C, turn relay OFF automatically and senda one-time “auto-OFF” notice.
 - Evidence: short video (60–90s) demonstrating above behavior https://youtu.be/eMreX57w4FE
 #### Flowchart 
-<img width="609" height="758" alt="image" src="https://github.com/user-attachments/assets/76b26c4f-ab1c-4323-9658-d649eb874850" />
+<img width="3148" height="4608" alt="image" src="https://github.com/user-attachments/assets/51a4a24c-8b27-43db-abdd-489e8a91ac2b" />
+
 
 ### Task 5-Robustness
 - Auto-reconnect Wi-Fi when dropped.
