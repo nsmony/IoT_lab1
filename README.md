@@ -56,9 +56,9 @@ PASSWORD = "YOUR_WIFI_PASSWORD"
 - Connect ESP32 to Wi-Fi
 - Connect ESP32 to telegram
 - Use the following commands:
-- /status : to show temperature, humidity, and relay status
-- /on : to turn the relay on
-- /off : to turn the relay off
+1. /status : to show temperature, humidity, and relay status
+2. /on : to turn the relay on
+3. /off : to turn the relay off
 # Tasks & Checkpoints
 ### Task 1-Sensor Read & Print
 - Read DHT22 every 5 seconds and print the temperature and humidity with 2
