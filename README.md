@@ -15,7 +15,8 @@ decimals.
 - Implement /status to reply with current T/H and relay state.
 - Implement /on and /off to control the relay.
 - Evidence: chat screenshot showing all three commands working.
-<img width="1280" height="675" alt="image" src="https://github.com/user-attachments/assets/60b5841b-0e0b-400f-80ff-af68ef1f16bd" />
+<img width="1280" height="677" alt="image" src="https://github.com/user-attachments/assets/ccaabe68-29b1-45d6-8ad6-636a808ef212" />
+
 
 ### Task 4-Bot Command
 - No messages while T < 30 °C.
