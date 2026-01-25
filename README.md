@@ -9,7 +9,7 @@ This project uses an ESP32 to measure temperature and humidity with a DHT22 sens
 - USB cable + laptop with Thonny
 - Wi-Fi access (internet)
 #### Wiring Connection
-<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/50e2a4b6-8f2e-44fe-8d9a-857ba427c5ac" />
+<img width="3148" height="4608" alt="image" src="https://github.com/user-attachments/assets/312c3e8e-793d-4e17-8eee-bf3514879f42" />
 
 #### DHT22 → ESP32
 | DHT22 Pin | ESP32 Pin |
