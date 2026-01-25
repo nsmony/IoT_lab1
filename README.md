@@ -25,7 +25,19 @@ This project uses an ESP32 to measure temperature and humidity with a DHT22 sens
 | GND | GND |
 | IN | GPIO 2 (D2)|
 
+### Configuration Steps
+#### Telegram Bot Setup:
+- Create your own telegram bot using @BotFather
+- Get the generated Bot Token 
+- Add your bot into your telegram group
+- Get your group Chat ID
 
+#### Code Configuration:
+- Update the information into the code:
+-- BOT_TOKEN = "YOUR_BOT_TOKEN"
+-- CHAT_ID = "YOUR_CHAT_ID"
+-- DHTPIN = 4
+-- RELAY_PIN = 2
 # Tasks & Checkpoints
 ### Task 1-Sensor Read & Print
 - Read DHT22 every 5 seconds and print the temperature and humidity with 2
