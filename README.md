@@ -22,7 +22,7 @@ decimals.
 - If T ≥ 30 °C and relay is OFF, send an alert every loop (5 s) until /on is
 received.
 - After /on, stop alerts. When T < 30 °C, turn relay OFF automatically and senda one-time “auto-OFF” notice.
-- Evidence: short video (60–90s) demonstrating above behavior.
+- Evidence: short video (60–90s) demonstrating above behavior https://youtu.be/eMreX57w4FE
 
 ### Task 5-Robustness
 - Auto-reconnect Wi-Fi when dropped.
